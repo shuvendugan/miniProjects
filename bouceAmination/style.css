@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 80vh;
+    width: 100vw;
+    background-color: aquamarine;
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: animateY 8s ease-out infinite,animateX 1s ease-out infinite alternate;
+}
+
+@keyframes animateY{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@keyframes animateX{
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 50%;
+    }
+}
