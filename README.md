@@ -1,2 +1,2 @@
 # miniProjects
-some mini features
+some mini Proectsß
