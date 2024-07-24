@@ -18,11 +18,13 @@ body{
     background-color: #116E69;
     border: #116E69;
     padding: 16px;
+    /* background-image: url('image.jpg'); */
+    background-size: cover;
 }
 #glass{
     height: auto;
     width: 100%;
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba( 255, 255, 255, 0.05 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
@@ -71,6 +73,7 @@ body{
 #text{
     padding: 16px;
     font-size: 18px;
+    font-weight: 800;
 }
 #footer{
     height: 32px;
