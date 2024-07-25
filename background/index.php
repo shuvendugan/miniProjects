@@ -16,7 +16,8 @@
                     <span id="fullscreen" class="round"></span>
                 </div>
                 <div id="subject">GIT</div>
-                <div id="date">July 6, 2024</div>
+                <!-- <div id="date">July 6, 2024</div> -->
+                <div id="date"><?php echo date("F j, Y"); ?></div>
             </div>
             <div id="text">
                 <p>$ git init </p>
