@@ -75,6 +75,18 @@ body{
     font-size: 18px;
     font-weight: 800;
 }
+#title{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #072523;
+    background-image: linear-gradient(45deg, rgb(112, 6, 6), rgb(16, 16, 122));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 200px;
+}
 #footer{
     height: 32px;
     padding: 0 16px;
