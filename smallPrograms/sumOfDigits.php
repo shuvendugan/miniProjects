@@ -27,7 +27,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit' ){
         $sum += $rem;
         $num /=10;
     }
-    echo "<h1 style='text-align:center'>Sum of digit is <span style='color:red'>$sum<span></h1>";
+    echo "<h1 style='text-align:center'>Sum of digit is <span style='color:red'>$sum</span></h1>";
 }
 
 ?>
