@@ -4,7 +4,7 @@
 //===================================
 //> Access inside the current class only - Private
 //> Access every where - public
-//> Access ininherited class -protected
+//> Access in inherited class -protected
 
 class Teachers{
     private function questionPapers(){
