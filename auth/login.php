@@ -1,3 +1,19 @@
+<?php
+require_once('logAuth.php');
+include_once "app/User.php";
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $user = new User;
+    $user->email = $_POST['email'];
+    $user->password = $_POST['password'];
+    if($user->login()){
+      $_SESSION['user_id']= $user->id;
+      header('Location: dashboard.php');
+      exit();
+    }else{ 
+        echo "User not login";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +36,8 @@
                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
               </div>
               <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
               </div>
               <button type="submit" class="btn btn-default">Submit</button>
               <a href="register.php" class='btn btn-primary'>Register</a>
