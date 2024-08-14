@@ -1,0 +1,10 @@
+- Creating folder
+- Goto folder in Terminal then $ composer init
+- give package name according to yours or name of the folder
+- create a index.php file and write 
+- then start a port with command $ php -S localhost:8000
+- then create folder name with App and Routes
+- inside App create folder like Config , Controller , Models, Middleware and Services
+- $ composer dump-autoload if sometime error showing class not found
+
+ 
