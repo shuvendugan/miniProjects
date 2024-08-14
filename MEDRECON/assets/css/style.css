@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 228vh;
+    background: linear-gradient(45deg, rgb(245, 245, 203), rgb(200, 240, 196));
+    overflow-x: hidden;
+}
+
+#registration {
+    height: 15vh;
+}
+
+#conf {
+    height: 25vh;
+}
+
+.wave-text {
+    display: inline-block;
+    white-space: wrap;
+}
+
+.wave-text span {
+    font-size: 50px;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #179942, rgb(214, 214, 16));
+    animation: wave 2s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#association {
+    height: 30vh;
+}
+
+.logo-img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.logo-name {
+    /* background-color: #4baa34; */
+    color: #000;
+    padding: 3px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#venue {
+    height: 15vh;
+    /*  */
+}
+
+#date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: orange;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 50%;
+    margin: auto;
+    padding: 7px;
+}
+
+#vanue-details {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid orange;
+    border-radius: 10px;
+    padding: 15px 5px 5px 5px;
+    font-weight: 500;
+    background-color: #edd9dc;
+}
+
+#vanue-details p:first-child {
+    font-family: cursive;
+    font-size: 24px;
+}
+
+
+
+
+#footer {
+    height: 48vh;
+    margin-top: 20px
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    background-image: linear-gradient(45deg, #179942, rgb(214, 214, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #243E8B;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+}
+
+h1 {
+    font-size: 35px;
+    background-image: linear-gradient(45deg, #179942, rgb(214, 39, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#medrecon {
+    margin: 0;
+    font-size: 50px;
+    background-image: linear-gradient(45deg, #991717, rgb(214, 214, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #243E8B;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.registration h1 {
+    animation: blink 1s infinite;
+}
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+h3 {
+    font-size: 2.75rem;
+    font-weight: 900;
+}
+
+
+
+.icon {
+    width: 75px;
+}
+
+.icon:hover,
+.icon:active {
+    animation: zoom .5s infinite ease-in-out;
+}
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.social {
+    height: 35vh
+}
+
+#brochure {
+    height: 84vh;
+    margin-top: 20px
+}
+
+#brochure img {
+    height: 80vh
+}
+
+.swiper-container {
+    width: 100%;
+    height: 84vh;
+    overflow: hidden;
+    /* Hide any overflow */
+    position: relative;
+}
+
+.swiper-wrapper {
+    width: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #179942, rgb(214, 214, 16));
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    body{
+        height: 215vh;
+    }
+    .wave-text {
+        /* display: inline-block; */
+        white-space: wrap;
+    }
+
+    .wave-text span {
+        font-size: 39px;
+    }
+         #brochure {
+             height: 65vh;
+             margin-top: 20px
+         }
+    
+         #brochure img {
+             height: 63vh
+         }
+    
+         .swiper-container {
+             height: 65vh;
+         }
+    
+         .swiper-slide img {
+             width: 55%;
+         }
+         #date{
+            font-size: 20px;
+         }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        height: 218vh;
+    }
+        
+              
+    .wave-text {
+        /* display: inline-block; */
+        white-space: wrap;
+    }
+
+    .wave-text span {
+        font-size: 39px;
+    }
+
+    #venue {
+        height: 21vh;
+    }
+
+    .swiper-wrapper {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .icon {
+        width: 58px;
+    }
+        #date {
+            font-size: 20px;
+        }
+         #vanue-details {
+             text-align: center;
+            font-size: 18px;
+         }
+    
+         #brochure {
+             height: 65vh;
+             margin-top: 20px
+         }
+    
+         #brochure img {
+             height: 63vh
+         }
+    
+         .swiper-container {
+             height: 65vh;
+         }
+        .swiper-slide img {
+            width: 70%;
+        }
+
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    body {
+        height: 227vh;
+        /* overflow: hidden; */
+    }
+        #date {
+            font-size: 20px;
+        }
+                #vanue-details {
+                    font-size: 16px;
+                }
+
+    .wave-text {
+        /* display: inline-block; */
+        white-space: wrap;
+    }
+
+    .wave-text span {
+        font-size: 39px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    #association {
+        height: 30vh
+    }
+
+    #venue {
+        height: 25vh;
+    }
+
+
+    .swiper-wrapper {
+        width: 100%;
+    }
+
+    .marquee-swiper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .icon {
+        width: 55px;
+    }
+
+    #footer {
+        height: 20vh;
+    }
+
+    #date {
+        width: 60%;
+    }
+
+    #vanue-details {
+        text-align: center;
+    }
+    #brochure {
+        height: 65vh;
+        margin-top: 20px
+    }
+
+    #brochure img {
+        height: 63vh
+    }
+    .swiper-container {
+        height: 65vh;
+    }
+
+}
+
+@media (max-width: 425px) {
+    body {
+        height: 298vh;
+        /* overflow: hidden; */
+    }
+
+    #registration {
+        height: 15vh;
+    }
+
+    #conf {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .wave-text {
+        /* display: inline-block; */
+        white-space: wrap;
+    }
+
+    .wave-text span {
+        font-size: 39px;
+    }
+
+    #association {
+        height: 70vh;
+    }
+
+    #venue {
+        height: 21vh;
+    }
+
+    #date {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    #vanue-details {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #brochure {
+        height: 62vh;
+        margin-top: 20px
+    }
+
+    #brochure img {
+        height: 60vh;
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+    }
+
+   .swiper-container {
+        width: 100%;
+        margin: auto;
+        height: 62vh;
+    }
+
+    .swiper-slide img {
+        width: 80%;
+    }
+
+    .social {
+        height: 20vh;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .logo-img {
+        width: 225px;
+        height: 225px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .icon {
+        width: 55px;
+    }
+
+    #medrecon {
+        font-size: 41px;
+    }
+}
