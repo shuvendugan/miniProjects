@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-    
 <head>
 	<title>Online Voting System</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/login.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-
-	<script src="assets/js/jquery.js" defer></script>
-	<script src="assets/js/bootstrap.js" defer></script>
-
+	<script defer src="assets/js/jquery.js" ></script>
+	<script defer src="assets/js/bootstrap.js" ></script>
 </head>
 <body>
 	<div class="container h-100">
@@ -23,43 +20,43 @@
                 <?php
                     if(isset($_GET['sign-up'])){
                 ?>
-                        <div class="d-flex justify-content-center form_container">
-                            <form  method='POST'>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                    </div>
-                                    <input type="text" name="su_usernmae" class="form-control input_user"  placeholder="username" required/>
+                    <div class="d-flex justify-content-center form_container">
+                        <form  method='POST'>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                    </div>
-                                    <input type="text" name="su_contact" class="form-control input_user"  placeholder="Mobile no" required/>
-                                </div>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                    </div>
-                                    <input type="text" name="su_password" class="form-control input_pass"  placeholder="password" required/>
-                                </div>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                    </div>
-                                    <input type="password" name="su_confPass" class="form-control input_pass"  placeholder="Confirm password" required/>
-                                </div>
-                                
-                                <div class="d-flex justify-content-center mt-3 login_container">
-                                    <button type="submit" name="btnSignup" class="btn login_btn">Sign up</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="mt-4">
-                            <div class="d-flex justify-content-center links text-white">
-                                Already have an account? <a href="index.php" class="ml-2 text-white text-decoration-none"> Sign In</a>
+                                <input type="text" name="su_username" class="form-control input_user"  placeholder="username" required/>
                             </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" name="su_contact" class="form-control input_user"  placeholder="Mobile no" required/>
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="text" name="su_password" class="form-control input_pass"  placeholder="password" required/>
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" name="su_confPass" class="form-control input_pass"  placeholder="Confirm password" required/>
+                            </div>
+                            
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="submit" name="btnSignup" class="btn login_btn">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-center links text-white">
+                            Already have an account? <a href="index.php" class="ml-2 text-white text-decoration-none"> Sign In</a>
                         </div>
+                    </div>
                 <?php
 
                     }else{
@@ -70,13 +67,13 @@
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input type="text" name="" class="form-control input_user" value="" placeholder="username">
+                                    <input type="text" name="userName" class="form-control input_user" placeholder="username">
                                 </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
-                                    <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+                                    <input type="password" name="password" class="form-control input_pass" placeholder="password">
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
@@ -85,7 +82,7 @@
                                     </div>
                                 </div>
                                     <div class="d-flex justify-content-center mt-3 login_container">
-                                        <button type="button" name="button" class="btn login_btn">Login</button>
+                                        <button type="button" name="btnLogin" class="btn login_btn">Login</button>
                                     </div>
                             </form>
                         </div>
@@ -99,6 +96,11 @@
                         </div>
                 <?php
                     }
+                    if(isset($_GET['register'])){
+                        echo "<span class='bg-white text-success text-center' > Your account has been created successfull!</span>";
+                    } else if(isset($_GET['invalid'])){
+                        echo "<span class='bg-white text-danger text-center' >Password Mismatch</span>"; 
+                    }
                 ?>
 				
 			</div>
@@ -106,3 +108,24 @@
 	</div>
 </body>
 </html>
+<?php
+require_once('includes/Database.php');
+if(isset($_POST['btnSignup'])){
+    $su_username = mysqli_real_escape_string($conn,$_POST['su_username']);
+    $su_contact = mysqli_real_escape_string($conn,$_POST['su_contact']);
+    $su_password = mysqli_real_escape_string($conn,$_POST['su_password']);
+    $su_confPass = mysqli_real_escape_string($conn,$_POST['su_confPass']);
+    $userRole = 'voter';
+    if($su_password === $su_confPass){
+        $qry= "INSERT INTO users(userName,ContactNo,password,userRole) values ($su_username,$su_contact,$su_password,$userRole)";
+
+        $stmt = $conn->exec($qry);
+        header('Location: index.php?sign-up=1&register=1');
+        exit();
+    }else{
+        // echo "<script>location.assign('Location: index.php?sign-up=1');</script>";
+        header('Location: index.php?sign-up=1&invalid=1');
+        exit();
+    }
+}
+?>
