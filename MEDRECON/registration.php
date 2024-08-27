@@ -6,6 +6,15 @@ require 'vendor/phpmailer/phpmailer/src/Exception.php';
 require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
+$filename="MEDRECON2025_".date('dmy')."html";
+
+function write_log($filename,$text)
+{
+    $myfile = fopen($filename, "a") or die("Unable to open file!");
+    fwrite($myfile, $text."\n");
+    fclose($myfile);
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $designation = htmlspecialchars($_POST['designation']);
@@ -42,8 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('sumum_bbsr@soahospitals.com', 'MEDRECON 2025');
         $mail->addAddress($email_id);  // Add a recipient
         $mail->addAddress('medrecon2025@soahospitals.com');  // Add a second recipient
-        $mail->addBCC('it_sumum@soahospitals.com');
-        $mail->addBCC('shuvendugan@gmail.com');
+        $mail->addBCC('itd_sumum@soahospitals.com');
+        $mail->addBCC('medrecon2025@soahospitals.com');
 
         // Attachments
         $mail->addAttachment($uploadedFile, $fileName);  // Attach uploaded file
@@ -125,8 +134,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $mail->send();
         echo "<p style='padding:10px;text-align:center;color:green'>Thank you for your registration! We have sent a confirmation email to you.</p>";
+        write_log($filename,$mail->Body);
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        write_log($filename,"Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
     }
 }
 
@@ -146,7 +157,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="text-center mb-4">
             <h1>MEDRECON 2025</h1>
             <h2>REGISTRATION FORM</h2>
-            <P id='description' style='font-weight:700'>(24<sup>th</sup> Annual National Medical Records Conference)</P>
+            <!-- <P id='description' style='font-weight:700'>(24<sup>th</sup> Annual National Medical Records Conference)</P> -->
+            <h2 class="wave-text" style='text-align: center;'>24th Annual National Conference on Medical Records <br/>and<br/> Health Information Management</h2>
         </div>
         <form action="<?php $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data">
             <div class='form-row'>
@@ -232,7 +244,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class='box'>
                     <h3>* NO CANCELLATION</h3>
-                    <h5>Last Date of registration before 31.12.2024</h5>
+                    <h5>Last Date of registration before 31 Dec 2024</h5>
                 </div>
                 <div class='box'>
                     <img height='300' src="images/qrcode.jpg" alt="QRCode"> 
@@ -241,19 +253,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <h4>Acount Details</h4>
                     <div class='details'>
                         <p>Account Name:</p>
-                        <p>SUMUM</p>
+                        <p>SUM Ultimate Medicare</p>
                     </div>
                     <div class='details'>
                         <p>Account No:</p>
-                        <p>856954268423</p>
+                        <p>6762002100001254</p>
                     </div>
                     <div class='details'>
                         <p>Bank Name:</p>
-                        <p>ICICI BANK</p>
+                        <p>Punjab National Bank</p>
                     </div>
                     <div class='details'>
                         <p>IFSC Code:</p>
-                        <p>ICICI000085694</p>
+                        <p>PUNB0676200</p>
                     </div>
                 </div>
             </div>
@@ -295,7 +307,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
 
         <footer class="text-center mt-5">
-            <p style='font-weight:700'>Venue - Auditorium Hall, Campus -II, K8, Kalinga Nagar,Bhubaneswar Pin Code – 751003, Odisha</p>
+            <p style='font-weight:700'>Venue - SOA Auditorium, Campus -II, K8, Kalinga Nagar,Bhubaneswar Pin Code – 751003, Odisha</p>
+            <p><b>Note :</b> Accommodation Details shall be shared leter, for booking accommodation kindly contact <b> 6372900091 </b> after registration.</p>
         </footer>
     </div>
 

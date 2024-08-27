@@ -52,12 +52,12 @@
     <div class='container' id='venue'>
         <div id='date'>on 21 <sup>st</sup>  &  22 <sup>nd</sup>  February 2025</div>
         <div id='vanue-details'>
-            <p>Vanue - </p>
+            <p>Venue - </p>
             <p> SOA Auditorium, Campus -II, K8, Kalinga Nagar,Bhubaneswar Pin Code – 751003, Odisha</p>           
         </div>
     </div>
     <div class='container-fluid' id='brochure'>
-        <div class="swiper-container">
+        <div class="swiper">
             <div class="swiper-wrapper">
                 <?php
                     $brochureDirectory = 'brochure';
@@ -113,7 +113,7 @@
             </div>
             <div class='col-sm-6 text-center'>
                 <h2><a style='text-decoration:none' href="registration.php">CLICK HERE TO REGISTER</a></h2>
-                <img style='height:40vh' src="images/RegQR.png" alt="">
+                <img id='qr'  src="images/RegQR.png" alt="">
             </div>
         </div>
     </div>
