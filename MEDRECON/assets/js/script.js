@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow', // or any other effect you prefer
+    const swiper = new Swiper('.swiper', {
+        effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
-        loop: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
         autoplay: {
-            delay: 3000, // Adjust delay as needed
-            disableOnInteraction: false, // Keeps autoplay running even after user interaction
+            delay: 3000, 
+            disableOnInteraction: false,
         },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-        },
+        loop: true,
     });
     swiper.el.addEventListener('mouseenter', () => {
         swiper.autoplay.stop();

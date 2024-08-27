@@ -9,7 +9,7 @@
 body {
     font-family: "Poppins", sans-serif;
     width: 100%;
-    height: 150vh;
+    height: 180vh;
     background: linear-gradient(45deg, rgb(245, 245, 203), rgb(200, 240, 196));
 }
 
@@ -96,49 +96,64 @@ label {
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     body {
-        height: 165vh;
+        height: 190vh;
     }
+
     /* #payment{
         flex-direction: column;
     } */
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
-        height: 203vh;
+        height: 235vh;
     }
 
-    #payment{
+    #payment {
         flex-wrap: wrap;
     }
-    .box{
+
+    .box {
         width: 30%;
     }
 }
+
 @media (min-width: 425px) and (max-width: 768px) {
+    body {
+        height: 250vh;
+    }
+
     .box {
         width: 48%;
     }
+
     #payment {
         flex-wrap: wrap;
     }
 }
+
 @media (max-width: 425px) {
-    body{
-        height:370vh;
+    body {
+        height: 420vh;
     }
+
     .box {
-            width: 90%;
-        }
+        width: 90%;
+    }
+
     #payment {
         flex-wrap: wrap;
     }
-    .form-row{
+
+    .form-row {
         flex-direction: column;
     }
-    h2{
+
+    h2 {
         font-size: 32px;
     }
-    #description{
+
+    #description {
         font-size: 12px;
     }
 }
