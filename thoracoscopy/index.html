@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Thoracoscopy CME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-theme-neutral-dark);
+      background: var(--dl-color-theme-neutral-light);
+
+      fill: var(--dl-color-theme-neutral-dark);
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  <style>
+    @keyframes fade-in-left {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
+
+    <div class="home-container">
+      <navbar-wrapper class="navbar-wrapper">
+        <!--Navbar component-->
+        <header class="navbar-container">
+          <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+            <img src="https://sumum.soahospitals.com/wp-content/uploads/2022/04/logo-1.png" alt="SUM Ultimate Medicare"
+              class="navbar-image1">
+
+            <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
+              <nav class="navbar-links1">
+                <span class="thq-link thq-body-small"><span><a id="home">Home</a></span></span>
+                <span class="thq-link thq-body-small">
+                  <span><a href="#REGISTRATION">Registration</a></span>
+                </span>
+              </nav>
+              <div class="navbar-buttons1">
+                <button class="navbar-action11 thq-button-animated thq-button-filled">
+                  <span class="thq-body-small"><a href="#REGISTRATION">Register Now</a></span>
+                </button>
+                <button class="navbar-action21 thq-button-outline thq-button-animated">
+                  <span class="thq-body-small"><a href="https://sumum.soahospitals.com" target="_blank">SUM Ultimate
+                      Medicare</a></span>
+                </button>
+              </div>
+            </div>
+            <div data-thq="thq-burger-menu" class="navbar-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="navbar-icon1">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                </path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
+              <div class="navbar-nav">
+                <div class="navbar-top">
+                  <img src="https://sumum.soahospitals.com/wp-content/uploads/2022/04/logo-1.png"
+                    alt="SUM Ultimate Medicare" class="navbar-image1">
+                  <div data-thq="thq-close-menu" class="navbar-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="navbar-icon3">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="navbar-links2">
+                  <span class="thq-link thq-body-small">
+                    <span>Home</span>
+                  </span>
+
+                </nav>
+              </div>
+              <div class="navbar-buttons2">
+                <button class="thq-button-outline">Register</button>
+              </div>
+            </div>
+          </header>
+        </header>
+      </navbar-wrapper>
+      <style>
+        h3 {
+          font-size: 40px;
+          background-image: linear-gradient(45deg, #6A1B9A, red);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .registration h3 {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          0% {
+            opacity: 1;
+          }
+
+          50% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+      </style>
+      <hero-wrapper class="hero-wrapper">
+        <div class='registration'>
+          <h3>Registration <br /> Closing Soon</h3>
+        </div>
+        <!--Hero component-->
+        <div class="hero-header78">
+          <div class="hero-column thq-section-padding thq-section-max-width">
+            <div class="hero-content1">
+              <h1 class="hero-text1 thq-heading-1">
+                <span style="color: #6A1B9A;">Medical Thoracoscopy Workshop and CME</span>
+              </h1>
+              <p class="hero-text2 thq-body-large">
+                <span> Organised By: </span>
+              </p>
+              <h2 class="hero-text1 thq-heading-2">Department of Pulmonary and Sleep Medicine,<br>SUM Ultimate Medicare,
+                Bhubaneswar </h2>
+              <p class="hero-text2 thq-body-large">
+                <span>
+                  On 20th Oct 2024, From 9:00 AM to 5 PM, <br>
+                  Venue - Visionary Vista, 1st Floor, SUM Ultimate Medicare, Bhubaneswar
+                </span>
+              </p>
+            </div>
+
+          </div>
+          <div class="hero-content2">
+            <div class="hero-row-container1 thq-animated-group-container-horizontal thq-mask-image-horizontal">
+              <div class="thq-animated-group-horizontal">
+                <img alt="SUM Ultimate Medicare Logo" src="img/1.jpeg"
+                  class="hero-placeholder-image10 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="SUM Ultimate Medicare Logo" src="img/2.jpeg"
+                  class="hero-placeholder-image11 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Department of Pulmonary and Sleep Medicine Image" src="img/3.jpeg"
+                  class="hero-placeholder-image12 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Department of Pulmonary and Sleep Medicine Image" src="img/4.jpeg"
+                  class="hero-placeholder-image13 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Organising Team Image" src="img/5.jpeg"
+                  class="hero-placeholder-image14 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Thoracoscopy Conference Image" src="img/1.jpeg"
+                  class="hero-placeholder-image15 thq-img-scale thq-img-ratio-1-1" />
+              </div>
+              <div class="thq-animated-group-horizontal">
+                <img alt="SUM Ultimate Medicare Logo" src="img/2.jpeg"
+                  class="hero-placeholder-image16 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="SUM Ultimate Medicare Logo" src="img/3.jpeg"
+                  class="hero-placeholder-image17 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Department of Pulmonary and Sleep Medicine Image" src="img/4.jpeg"
+                  class="hero-placeholder-image18 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Department of Pulmonary and Sleep Medicine Image" src="img/5.jpeg"
+                  class="hero-placeholder-image19 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Organising Team Image" src="img/1.jpeg"
+                  class="hero-placeholder-image20 thq-img-scale thq-img-ratio-1-1" />
+                <img alt="Hero Image" src="img/4.jpeg"
+                  class="hero-placeholder-image21 thq-img-scale thq-img-ratio-1-1" />
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div>
+          <div class="hero-container2">
+            <style>
+              @keyframes scroll-x {
+                from {
+                  transform: translateX(0);
+                }
+
+                to {
+                  transform: translateX(calc(-100% - 16px));
+                }
+              }
+
+              @keyframes scroll-y {
+                from {
+                  transform: translateY(0);
+                }
+
+                to {
+                  transform: translateY(calc(-100% - 16px));
+                }
+              }
+
+              .swiper-slide1 {
+                padding: 0;
+              }
+
+              .padding-left-24 {
+                padding-left: 24%;
+              }
+
+              .padding-left-20 {
+                padding-left: 20%;
+              }
+
+              @media only screen and (max-width:480px) {
+                .padding-left-20 {
+                  padding-left: 5%;
+                }
+
+                .team14-slider-slide10 {
+                  flex-direction: column;
+                }
+
+                .padding-left-24 {
+                  padding-left: 0%;
+                }
+
+                .navbar-image1 {
+                  height: 5rem;
+                }
+              }
+
+              @media only screen and (min-width:481px) and (max-width:768px) {
+                body {
+                  width: 100%;
+                }
+
+                .padding-left-20 {
+                  padding: 0;
+                }
+
+                .padding-left-24 {
+                  padding-left: 0;
+                }
+              }
+            </style>
+          </div>
+        </div>
+    </div>
+    </hero-wrapper>
+    <style>
+      .container {
+        width: 80%;
+        margin: 2% auto;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .col-sm-6 {
+        width: 48%;
+        margin: 1%;
+        height: 50vh;
+        /* overflow: auto; */
+      }
+
+      .row img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      .heading {
+        height: 20%;
+        color: #6A1B9A;
+      }
+
+      .div-text {
+        height: 80%;
+        overflow: auto;
+      }
+
+      @media only screen and (max-width:480px) {
+        .container {
+          width: 100%;
+        }
+
+        .col-sm-6 {
+          width: 98%;
+        }
+
+        .row {
+          flex-direction: column;
+        }
+
+        .heading {
+          height: 30%;
+        }
+
+        .div-text {
+          height: 70%;
+        }
+      }
+
+      @media only screen and (min-width:481px) and (max-width:768px) {}
+    </style>
+
+    <features1-wrapper class="features1-wrapper">
+      <div class='container' id='welcome'>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <img src="img/sum-ultimate.avif" alt="SUM Ultimate">
+          </div>
+          <div class='col-sm-6' style='height: 46vh;'>
+            <div class='heading' id='about-heading'>
+              <h2 style='font-size:32px;text-align:center'>Welcome to<br /> SUM Ultimate Medicare</h2>
+              <hr>
+            </div>
+            <div class="div-text">
+              <p>
+                At SUM Ultimate Medicare, our vision is to become the ultimate destination for healthcare and healing.
+                We are
+                on a mission to provide next-generation treatments and care in patient-centric, technology-enhanced
+                settings,
+                aimed at improving the health of people. Our dedication lies in delivering the safest, most accessible,
+                effective, and compassionate care with integrity and accountability, all within an ecosystem of healing
+                that
+                integrates excellence in medical research and education.
+              </p>
+              <h5>Comprehensive Care for Your Family</h5>
+              <p>
+                SUM Ultimate Medicare stands as a multispecialty quaternary care hospital, committed to medical
+                excellence
+                across a broad spectrum of medical and surgical interventions. We offer a complete range of follow-up
+                services, ensuring that our patients receive continuous and comprehensive care.
+              </p>
+              <h5>State-of-the-Art Facilities and Innovative Research</h5>
+              <p>
+                We provide an atmosphere of healing with state-of-the-art healthcare facilities. Our hospital integrates
+                a
+                wide spectrum of clinical education and research opportunities, enabling us to offer advanced medical
+                treatments and care. Our commitment to innovation ensures that we stay at the forefront of medical
+                technology
+                and practices.
+              </p>
+              <h5>A Hub for Medical Tourism and Organ Transplants</h5>
+              <p>
+                As a leading medical tourism hub in eastern India, SUM Ultimate Medicare attracts patients from across
+                the
+                region and beyond, offering world-class healthcare services. We are also renowned for our successful
+                organ
+                transplant programs, which have given many patients a new lease on life. Our expertise and comprehensive
+                care
+                make us a trusted destination for critical medical interventions.
+              </p>
+              <h5>Our Guiding Values</h5>
+              <p>
+                Our values are encapsulated in the Seven Pillars that guide us with integrity:
+              </p>
+              <ol>
+                <li>Sincere Service</li>
+                <li>Dedicated People</li>
+                <li>Affordable Pricing</li>
+                <li>Innovation & Distinctive Care</li>
+                <li>Unmatched Quality</li>
+                <li>Accountability</li>
+                <li>Clinical Finesse</li>
+              </ol>
+              <h5>Pioneering Healthcare in Odisha </h5>
+              <p>As a first-of-its-kind institution in Odisha, SUM Ultimate Hospital has pioneered groundbreaking
+                healthcare
+                technologies in the state. We are committed to serving beyond business imperatives, fostering patient
+                healing
+                and building a “Bridge of Trust” with the community. Our focus on transparency, patient-friendly
+                healthcare,
+                empathy, compassion, coordination, and competency has consistently delivered best-in-class clinical
+                outcomes.
+              </p>
+              <p>Join us at SUM Ultimate Medicare, where we are dedicated to improving the health and well-being of our
+                community with excellence, compassion, and innovation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </features1-wrapper>
+    <cta-wrapper class="cta-wrapper">
+      <!--CTA component-->
+      <div class="thq-section-padding">
+        <div class="thq-section-max-width">
+          <div class="cta-accent2-bg">
+            <div class="cta-accent1-bg">
+              <div class="cta-container2">
+                <div class="cta-content">
+                  <span class="thq-heading-2">
+                    <span>Register Now!</span>
+                  </span>
+                  <p class="thq-body-large">
+                    <span>
+                      Limited seats: 40 only available. Reserve your spot today.
+                    </span>
+                  </p>
+                  <div class="pricing-tabs">
+
+                    <button class="pricing-button4 thq-button-outline thq-button-animated">
+                      <span class="thq-body-small"><a href="#REGISTRATION">Rs. 3000/- Only</a></span>
+                    </button>
+                  </div>
+
+
+                </div>
+                <div class="cta-actions">
+                  <button type="button" class="thq-button-filled cta-button">
+                    <span><a href="#REGISTRATION">Register Now</a></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </cta-wrapper>
+
+
+    <div class="team1-section-title" style="max-width: 100%;">
+      <span>
+        <fragment class="team1-fragment55">
+          <span class="team1-text79 thq-body-small">
+
+          </span>
+        </fragment>
+      </span>
+      <div class="team1-content1">
+        <h2>
+          <fragment class="team1-fragment39">
+            <h2 class="team1-text59 thq-heading-2">Our Patrons</h2>
+          </fragment>
+        </h2>
+        <p>
+          <fragment class="team1-fragment43"></fragment>
+        </p>
+
+
+        <p></p>
+      </div>
+    </div>
+
+    <div class="thq-section-padding padding-left-20">
+      <div class="team14-max-width thq-section-max-width">
+        <div data-thq="slider-wrapper" class="swiper-wrapper">
+          <div data-thq="slider-slide1" class="team14-slider-slide10 swiper-slide1">
+            <div class="team14-card10">
+              <img alt="Dr. Swetapadma Dash" src="img/Swethapadma-1.jpg" class="thq-img-ratio-1-1" />
+              <div class="team14-content11 padding-left-24">
+                <div class="team14-title10">
+                  <span>
+                    <fragment class="team1-fragment29">
+                      <span class="team1-text49 thq-body-small">
+                        Dr. Swetapadma Dash
+                      </span>
+                    </fragment>
+                  </span>
+                  <span>
+                    <fragment class="team1-fragment17">
+                      <span class="team1-text35 thq-body-small">
+                        Chief Executive Officer
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="team14-card11">
+              <img alt="Dr. (Brig) Biraj Mohan Mishra" src="img/biraj-1.jpg" class="thq-img-ratio-1-1" />
+              <div class="team14-content12 padding-left-24">
+                <div class="team14-title11">
+                  <span>
+                    <fragment class="team1-fragment13">
+                      <span class="team1-text31 thq-body-small">
+                        Dr. (Brig) Biraj Mohan Mishra
+                      </span>
+                    </fragment>
+                  </span>
+                  <span>
+                    <fragment class="team1-fragment12">
+                      <span class="team1-text30 thq-body-small">
+                        Chief of Medical Services
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="team14-card12">
+              <img alt="Dr. Prasanta Kumar Panda" src="img/drpanda.jpeg" class="thq-img-ratio-1-1" />
+              <div class="team14-content13 padding-left-24">
+                <div class="team14-title12">
+                  <span>
+                    <fragment class="team1-fragment51">
+                      <span class="team1-text75 thq-body-small">
+                        Dr. Prasanta Kumar Panda
+                      </span>
+                    </fragment>
+                  </span>
+                  <span>
+                    <fragment class="team1-fragment42">
+                      <span class="team1-text62 thq-body-small">
+                        Medical Superintendent
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </team14-wrapper> -->
+
+
+
+
+
+
+    <!-- 000000000000000000000000 -->
+    <link href="team1.css" rel="stylesheet">
+    <div class="thq-section-padding">
+      <div class="team1-max-width thq-section-max-width">
+        <div class="team1-section-title">
+          <span>
+            <fragment class="team1-fragment55">
+              <span class="team1-text79 thq-body-small">
+                Join Our Team Today!
+              </span>
+            </fragment>
+          </span>
+          <div class="team1-content1">
+            <h2>
+              <fragment class="team1-fragment39">
+                <h2 class="team1-text59 thq-heading-2">Organizing Team</h2>
+              </fragment>
+            </h2>
+            <p>
+              <fragment class="team1-fragment43"></fragment>
+            </p>
+
+
+            <p></p>
+          </div>
+        </div>
+        <div class="team1-content2">
+          <div class="team1-content3">
+            <div class="team1-row1">
+              <div class="team1-container1">
+                <div class="team1-card2">
+                  <img alt="img/dralisha.jpg" src="img/dralisha.jpg"
+                    class="team1-placeholder-image1 thq-img-round thq-img-ratio-1-1">
+                  <div class="team1-content5">
+                    <div class="team1-title2">
+                      <span>
+                        <fragment class="team1-fragment45">
+                          <span class="team1-text67 thq-body-small">
+                            Dr. Alisha Choudhury
+
+                          </span>
+                        </fragment>
+                      </span>
+                      <span>
+                        <fragment class="team1-fragment42">
+                          <span class="team1-text62 thq-body-small">
+                            Consultant, Critical Care, Pulmonary and Sleep Medicine
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="team1-card1">
+                  <img alt="" src="img/Dr-Satyajit.jpg"
+                    class="team1-placeholder-image1 thq-img-round thq-img-ratio-1-1">
+                  <div class="team1-content4">
+                    <div class="team1-title1">
+                      <span>
+                        <fragment class="team1-fragment51">
+                          <span class="team1-text75 thq-body-small">
+                            Dr. Satyajit Acharya
+                          </span>
+                        </fragment>
+                      </span>
+                      <fragment class="team1-fragment50">
+                        <span class="team1-text74 thq-body-small">
+                          In-charge, Associate Consultant, Pulmonary and Sleep Medicine
+                        </span>
+                      </fragment>
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team1-content2">
+          <div class="team1-content3">
+            <div class="team1-row1">
+              <div class="team1-container1">
+                <div class="team1-card2">
+                  <img alt="img/dralisha.jpg" src="img/Rita.jpeg"
+                    class="team1-placeholder-image2 thq-img-round thq-img-ratio-1-1">
+                  <div class="team1-content5">
+                    <div class="team1-title2">
+                      <span>
+                        <fragment class="team1-fragment45">
+                          <span class="team1-text67 thq-body-small">
+                            Mrs. G Rita
+                          </span>
+                        </fragment>
+                      </span>
+                      <span>
+                        <fragment class="team1-fragment42">
+                          <span class="team1-text62 thq-body-small">
+                            Respiratory technician
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="team1-card2">
+                  <img alt="img/dralisha.jpg" src="img/Kousalya.jpeg"
+                    class="team1-placeholder-image2 thq-img-round thq-img-ratio-1-1">
+                  <div class="team1-content5">
+                    <div class="team1-title2">
+                      <span>
+                        <fragment class="team1-fragment45">
+                          <span class="team1-text67 thq-body-small">
+                            Mrs. Kousalya
+                          </span>
+                        </fragment>
+                      </span>
+                      <span>
+                        <fragment class="team1-fragment42">
+                          <span class="team1-text62 thq-body-small">
+                            Respiratory Technician
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="team1-card2">
+                  <img alt="img/dralisha.jpg" src="img/laxmi.jpg"
+                    class="team1-placeholder-image2 thq-img-round thq-img-ratio-1-1">
+                  <div class="team1-content5">
+                    <div class="team1-title2">
+                      <span>
+                        <fragment class="team1-fragment45">
+                          <span class="team1-text67 thq-body-small">
+                            Mrs. Laxmi
+                          </span>
+                        </fragment>
+                      </span>
+                      <span>
+                        <fragment class="team1-fragment42">
+                          <span class="team1-text62 thq-body-small">
+                            Staff nurse
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------- -->
+
+
+
+
+  <pricing-wrapper class="pricing-wrapper">
+    <!--Pricing component-->
+    <div class="pricing-pricing23 thq-section-padding">
+      <div class="pricing-max-width thq-section-max-width">
+        <div class="pricing-section-title">
+          <div class="pricing-content">
+            <h2 class="thq-heading-2"><span><a id="REGISTRATION">Registration Process</a></span></h2>
+          </div>
+
+          Scan and share your name at below WhatsApp number
+        </div>
+        <div class="hero-actions">
+          <button class="thq-button-filled hero-button1">
+            <span class="thq-body-small">
+              <span>WhatsApp No.: 9437981291</span>
+            </span>
+
+          </button>
+        </div>
+
+        <img src="img/qrcode.jpg" alt="QR Code" class="img-fluid" width="40%">
+
+        <div class="hero-actions">
+          <button class="thq-button-filled hero-button1">
+            <span class="thq-body-small">
+              <span>WhatsApp No.: 9437981291</span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </pricing-wrapper>
+  <contact-wrapper class="contact-wrapper">
+    <!--Contact component-->
+    <div class="contact-contact20 thq-section-padding">
+      <div class="contact-max-width thq-section-max-width">
+        <div class="contact-section-title">
+          <span class="thq-body-small">
+            <span>Get in touch with us today!</span>
+          </span>
+          <div class="contact-content1">
+            <h2 class="thq-heading-2"><span>Contact Us</span></h2>
+            <p class="contact-text3 thq-body-large">
+              <span>
+                For any inquiries or assistance, feel free to reach out to
+                us.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-content2">
+            <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+              <path
+                d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z">
+              </path>
+            </svg>
+            <div class="contact-contact-info1">
+              <div class="contact-content3">
+                <h3 class="contact-text4 thq-heading-3">Email</h3>
+                <p class="contact-text5 thq-body-large">
+
+                </p>
+              </div>
+              <span class="contact-email thq-body-small">
+                <span>sumum_bbsr@soahospitals.com</span><br />
+                <span><b>website:</b> https://sumum.soahospitals.com</span>
+              </span>
+            </div>
+          </div>
+          <div class="contact-content4">
+            <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+              <path
+                d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z">
+              </path>
+            </svg>
+            <div class="contact-contact-info2">
+              <div class="contact-content5">
+                <h3 class="contact-text6 thq-heading-3">Phone</h3>
+                <p class="contact-text7 thq-body-large">
+
+                </p>
+              </div>
+              <span class="contact-phone thq-body-small">
+                <span>+91-9437981291</span><br />
+                <span>+91-9743916990</span>
+              </span>
+            </div>
+          </div>
+          <div class="contact-content6">
+            <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+              <path
+                d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z">
+              </path>
+            </svg>
+            <div class="contact-contact-info3">
+              <div class="contact-content7">
+                <h3 class="contact-text8 thq-heading-3">RSVP</h3>
+                <p class="contact-text9 thq-body-large">
+
+                </p>
+              </div>
+              <span class="contact-address thq-body-small">
+                <span>SUM Ultimate Medicare, K-8, Kalinga Nagar, Ghatikia, Bhubaneswar</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </contact-wrapper>
+  <footer-wrapper class="footer-wrapper">
+  </footer-wrapper>
+  </div>
+  </div>
+  <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
+</html>
