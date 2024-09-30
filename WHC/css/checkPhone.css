@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Roboto Condensed", sans-serif;
+    background-color: #aed8f0;
+    width: 100%;
+    min-height: 90vh;
+    accent-color: #432686;
+    /* min-height: 600px; */
+
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+    position: relative;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #432686;
+    margin: 20px;
+}
+
+main {
+    min-height: 45vh;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 1rem;
+}
+.cusform {
+    width: 100%;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: center;
+}
+
+.cusform label {
+    text-align: center;
+    width: 100%;
+    color: #432686;
+    padding: .4rem;
+    margin: .8rem .5rem;
+}
+
+.cusform input {
+    width: 100%;
+    padding: .5rem;
+    margin: .8rem .5rem;
+}
+p{
+    margin: 1.5rem auto;
+    text-align: center ;
+}
+.outer{
+    background: #e7e0f7;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+form>button {
+    width: 100%;
+    background-color: #432686;
+    border: none;
+    padding: .5rem;
+    margin: .8rem auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 2.5rem auto;
+}
+hr{
+    margin: .5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 98%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    main {
+        height: auto;
+    }
+    .main-container{
+        display: block;
+    }
+    .outer{
+        margin-top: 1rem;
+    }
+}

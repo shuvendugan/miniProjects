@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Roboto Condensed", sans-serif;
+    background-color: #aed8f0;
+    width: 100%;
+    min-height: 100vh;
+    accent-color: #432686;
+    /* min-height: 600px; */
+
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #432686;
+    margin: 20px;
+}
+
+main {
+    min-height: 60vh;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    height: auto;
+}
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+ tr td:first-child{
+    width: 20%;
+}
+td {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+form>button {
+    width: 100%;
+    background-color: #432686;
+    border: none;
+    padding: .5rem;
+    margin: .8rem auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 2.5rem auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 98%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    main {
+        height: auto;
+    }
+    table {
+        width: 95%;
+    }
+}

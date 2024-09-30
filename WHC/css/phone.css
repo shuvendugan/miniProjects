@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Roboto Condensed", sans-serif;
+    background-color: #aed8f0;
+    width: 100%;
+    min-height: 90vh;
+    accent-color: #432686;
+    /* min-height: 600px; */
+
+}
+
+.container {
+    width: 30%;
+    margin: auto;
+    position: relative;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #432686;
+    margin: 20px;
+}
+.notification {
+    display: none;
+    padding: .5rem;
+    border-radius: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+}
+
+.failure {
+    background-color: rgb(249, 206, 206);
+    color: #c40c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    background-color: rgb(207, 252, 207);
+    color: rgb(6, 80, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    height: 45vh;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+    /* height: auto; */
+}
+.cusform {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.cusform label {
+    color: #432686;
+    padding: .4rem;
+    margin: .8rem .5rem;
+}
+
+.cusform input,
+.cusform select {
+    width: 50%;
+    padding: .5rem;
+    margin: .8rem .5rem;
+}
+
+.cusform span {
+    padding: .5rem;
+    margin: .8rem .5rem;
+}
+
+.cusform img {
+    height: 34px;
+    margin-top: .8rem;
+}
+
+form>button {
+    width: 100%;
+    background-color: #432686;
+    border: none;
+    padding: .5rem;
+    margin: .8rem auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 2.5rem auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-container {
+        display: block;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 98%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    main{
+        height: 35vh;
+    }
+    .cusform label {
+        color: #432686;
+        padding: .2rem;
+        margin: .2rem .1rem;
+        font-size: .75rem;
+    }
+
+    .cusform input,
+    .cusform select {
+        width: 50%;
+        padding: .2rem;
+        margin: .2rem .1rem;
+    }
+
+    .cusform span {
+        padding: .2rem;
+        margin: .2rem .1rem;
+    }
+
+    .cusform img {
+        height: 32px;
+        margin-top: .3rem;
+    }
+}
